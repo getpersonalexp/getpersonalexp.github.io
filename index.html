@@ -180,8 +180,14 @@ a:focus-visible {
       <label for="email">Email</label>
       <input id="email" type="email" required autocomplete="email">
     </div>
+    <div id="password-box" style="display:none;">
+    <br>
+    <input id="auth-password" type="password" placeholder="Password"><br><br>
+    <button onclick="login()">Submit</button>
+  </div>
 
-    <button class="primary-btn" type="submit">
+
+    <button class="primary-btn" onclick="checkEmail() type="submit">
       Sign In
     </button>
 
