@@ -8,10 +8,12 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "PASTE_API_KEY",
-  authDomain: "PASTE_AUTH_DOMAIN",
-  projectId: "PASTE_PROJECT_ID",
-  appId: "PASTE_APP_ID"
+  apiKey: "AIzaSyDxqeShEgmj2YToX6b1nvzskecS-oM7jv0",
+  authDomain: "personal-62439.firebaseapp.com",
+  projectId: "personal-62439",
+  storageBucket: "personal-62439.firebasestorage.app",
+  messagingSenderId: "730850092864",
+  appId: "1:730850092864:web:a0a00939f8a4949c9dfca5"
 };
 
 const app = initializeApp(firebaseConfig);
