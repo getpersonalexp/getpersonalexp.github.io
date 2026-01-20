@@ -171,24 +171,40 @@ a:focus-visible {
 </head>
 
 <body>
+<div id="auth-box" style="text-align:center;margin-top:100px;">
+  <h2>Login</h2>
+  <input id="auth-email" type="email" placeholder="Email"><br><br>
+  <button class="primary-btn" onclick="checkEmail()">Login</button>
+
+  <div id="password-box" style="display:none;">
+    <br>
+    <input id="auth-password" type="password" placeholder="Password"><br><br>
+    <button onclick="login()">Submit</button>
+  </div>
+
+  <br><br>
+  <button onclick="location.href='create-account.html'">Create Account</button>
+  <p id="auth-msg"></p>
+</div>
+
+<div id="app-content" style="display:none;">
+
 
 <main class="auth-container" role="main">
   <h1>PERSONAL</h1>
 
   <form aria-label="Login form">
     <div class="input-group">
-      <input id="auth-email" type="email" placeholder="Email"><br><br>
-    </div>
-
-    <button class="primary-btn" onclick="checkEmail() type="submit">
+      <label for="email">Email</label>
+      <input id="email" type="email" required autocomplete="email">
+   <button class="primary-btn" type="submit">
       Sign In
     </button>
+    </div>
 
-      <div id="password-box" style="display:none;">
-    <br>
-    <input id="auth-password" type="password" placeholder="Password"><br><br>
-    <button onclick="login()">Submit</button>
-  </div>
+    <button class="primary-btn" type="submit">
+      Sign In
+    </button>
 
     <button class="secondary-btn" type="button">
       Create New Account
@@ -209,9 +225,11 @@ a:focus-visible {
 <script>
 document.querySelector("form").addEventListener("submit", e => {
   e.preventDefault();
-  alert("LOGGING IN");
+  alert("Demo only — connect this to a secure backend.");
 });
 </script>
 
+</div>
+<script type="module" src="auth.js"></script>
 </body>
 </html>
