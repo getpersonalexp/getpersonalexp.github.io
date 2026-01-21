@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Login</title></head>
+<body style="text-align:center;margin-top:100px;">
+<div id="auth-box">
+  <h2>Login</h2>
+  <input id="auth-email" type="email" placeholder="Email"><br><br>
+  <button onclick="checkEmail()">Login</button>
+  <div id="password-box" style="display:none;">
+    <br>
+    <input id="auth-password" type="password" placeholder="Password"><br><br>
+    <button onclick="login()">Submit</button>
+  </div>
+  <br><br>
+  <button onclick="location.href='create-account.html'">Create Account</button>
+  <p id="auth-msg"></p>
+</div>
+<script type="module" src="auth.js"></script>
+</body>
+</html>
